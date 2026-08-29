@@ -1,0 +1,5 @@
+outs:
+- md5: d76b1405302aa92998af4c08543bdc29
+  size: 26088153
+  hash: md5
+  path: baseline_cnn.pt
