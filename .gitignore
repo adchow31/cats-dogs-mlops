@@ -6,3 +6,6 @@ __pycache__/
 venv/
 .env
 models/*.pt
+mlflow.db
+confusion_matrix.png
+loss_curves.png
