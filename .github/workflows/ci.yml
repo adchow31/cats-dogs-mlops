@@ -32,7 +32,7 @@ jobs:
           pip install pytest
 
       - name: Run unit tests
-        run: pytest tests/ -v
+        run: python -m pytest tests/ -v
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
