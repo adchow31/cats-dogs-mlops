@@ -5,7 +5,6 @@ __pycache__/
 .ipynb_checkpoints/
 venv/
 .env
-models/*.pt
 mlflow.db
 confusion_matrix.png
 loss_curves.png
