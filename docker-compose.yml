@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   cats-dogs-api:
-    image: cats-dogs-classifier:v1
+    image: ghcr.io/adchow31/cats-dogs-mlops:latest
     container_name: cats-dogs-api
     ports:
       - "8000:8000"
