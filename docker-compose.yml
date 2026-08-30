@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  cats-dogs-api:
+    image: ghcr.io/adchow31/cats-dogs-mlops:latest
+    container_name: cats-dogs-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
