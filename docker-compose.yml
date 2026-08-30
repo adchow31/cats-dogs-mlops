@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   cats-dogs-api:
-    image: ghcr.io/adchow31/cats-dogs-mlops:latest
+    image: cats-dogs-classifier:v1
     container_name: cats-dogs-api
     ports:
       - "8000:8000"
@@ -13,3 +13,13 @@ services:
       timeout: 5s
       retries: 3
       start_period: 10s
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    container_name: cats-dogs-prometheus
+    ports:
+      - "9091:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - cats-dogs-api
+      

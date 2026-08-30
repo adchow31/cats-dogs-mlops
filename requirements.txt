@@ -6,3 +6,4 @@ pillow==12.1.0
 python-multipart==0.0.32
 pydantic==2.13.4
 numpy==2.4.4
+prometheus-fastapi-instrumentator==7.0.0
