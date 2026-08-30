@@ -2,6 +2,8 @@
 
 Binary image classification (Cats vs Dogs) for a pet adoption platform, built as a complete MLOps pipeline covering model development, experiment tracking, packaging, containerization, CI/CD, and monitoring — using entirely open-source tools.
 
+Please refer to the Detailed Document titled - "MLOps_Assignment_02_Aditya_Chowdhury_2024AD05010.pdf"
+
 **MLOps Assignment 2 — BITS Pilani WILP (S1-25_AIMLCZG523)**
 
 [![CI](https://github.com/adchow31/cats-dogs-mlops/actions/workflows/ci.yml/badge.svg)](https://github.com/adchow31/cats-dogs-mlops/actions/workflows/ci.yml)
